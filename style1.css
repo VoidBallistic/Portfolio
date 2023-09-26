@@ -1,0 +1,99 @@
+body{
+    padding: 4.5rem;
+    margin: 0;
+    background: #edc0bf;
+    background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar{
+
+  float: right;
+  top: 0px;
+  right: 30px;
+  height: 24px;
+  font-size: 20px;
+
+  outline: 0;
+  border: 1px solid rgba(17, 37, 41, 0.781);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 20;
+  height: 30px;
+
+  display: inline-flex;
+  position: relative;
+  color: #0087ca;
+}
+
+.navbar::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2e6e15;
+  transform-origin: bottom right;
+  transition: transform 1s ease-out;
+
+}
+
+.form {
+    position: fixed;
+    left: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: rgb(193, 141, 245);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+  }
+      
